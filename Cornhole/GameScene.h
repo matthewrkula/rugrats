@@ -1,0 +1,13 @@
+//
+//  GameScene.h
+//  Cornhole
+//
+
+//  Copyright (c) 2015 Matt Kula. All rights reserved.
+//
+
+#import <SpriteKit/SpriteKit.h>
+
+@interface GameScene : SKScene
+
+@end
