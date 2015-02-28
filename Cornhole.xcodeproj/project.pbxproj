@@ -10,12 +10,14 @@
 		C95E401C1AA23C7400CA4013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E401B1AA23C7400CA4013 /* main.m */; };
 		C95E401F1AA23C7400CA4013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E401E1AA23C7400CA4013 /* AppDelegate.m */; };
 		C95E40221AA23C7400CA4013 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E40211AA23C7400CA4013 /* GameScene.m */; };
-		C95E40241AA23C7400CA4013 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C95E40231AA23C7400CA4013 /* GameScene.sks */; };
 		C95E40271AA23C7400CA4013 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E40261AA23C7400CA4013 /* GameViewController.m */; };
 		C95E402A1AA23C7400CA4013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95E40281AA23C7400CA4013 /* Main.storyboard */; };
 		C95E402C1AA23C7400CA4013 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95E402B1AA23C7400CA4013 /* Images.xcassets */; };
 		C95E402F1AA23C7400CA4013 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95E402D1AA23C7400CA4013 /* LaunchScreen.xib */; };
 		C95E403B1AA23C7400CA4013 /* CornholeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E403A1AA23C7400CA4013 /* CornholeTests.m */; };
+		C95E40471AA23D3700CA4013 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E40461AA23D3700CA4013 /* Board.m */; };
+		C95E404A1AA2429100CA4013 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E40491AA2429100CA4013 /* Hole.m */; };
+		C95E404D1AA2459000CA4013 /* BeanBag.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E404C1AA2459000CA4013 /* BeanBag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 		C95E401E1AA23C7400CA4013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C95E40201AA23C7400CA4013 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		C95E40211AA23C7400CA4013 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		C95E40231AA23C7400CA4013 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C95E40251AA23C7400CA4013 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		C95E40261AA23C7400CA4013 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		C95E40291AA23C7400CA4013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +46,12 @@
 		C95E40341AA23C7400CA4013 /* CornholeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornholeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95E40391AA23C7400CA4013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95E403A1AA23C7400CA4013 /* CornholeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornholeTests.m; sourceTree = "<group>"; };
+		C95E40451AA23D3700CA4013 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		C95E40461AA23D3700CA4013 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		C95E40481AA2429100CA4013 /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		C95E40491AA2429100CA4013 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		C95E404B1AA2459000CA4013 /* BeanBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanBag.h; sourceTree = "<group>"; };
+		C95E404C1AA2459000CA4013 /* BeanBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeanBag.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +93,11 @@
 		C95E40181AA23C7400CA4013 /* Cornhole */ = {
 			isa = PBXGroup;
 			children = (
+				C95E40441AA23D2100CA4013 /* Sprites */,
 				C95E401D1AA23C7400CA4013 /* AppDelegate.h */,
 				C95E401E1AA23C7400CA4013 /* AppDelegate.m */,
 				C95E40201AA23C7400CA4013 /* GameScene.h */,
 				C95E40211AA23C7400CA4013 /* GameScene.m */,
-				C95E40231AA23C7400CA4013 /* GameScene.sks */,
 				C95E40251AA23C7400CA4013 /* GameViewController.h */,
 				C95E40261AA23C7400CA4013 /* GameViewController.m */,
 				C95E40281AA23C7400CA4013 /* Main.storyboard */,
@@ -125,6 +132,19 @@
 				C95E40391AA23C7400CA4013 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C95E40441AA23D2100CA4013 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				C95E40451AA23D3700CA4013 /* Board.h */,
+				C95E40461AA23D3700CA4013 /* Board.m */,
+				C95E40481AA2429100CA4013 /* Hole.h */,
+				C95E40491AA2429100CA4013 /* Hole.m */,
+				C95E404B1AA2459000CA4013 /* BeanBag.h */,
+				C95E404C1AA2459000CA4013 /* BeanBag.m */,
+			);
+			name = Sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +196,7 @@
 				TargetAttributes = {
 					C95E40151AA23C7400CA4013 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9NLDRC2923;
 					};
 					C95E40331AA23C7400CA4013 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -209,7 +230,6 @@
 			files = (
 				C95E402F1AA23C7400CA4013 /* LaunchScreen.xib in Resources */,
 				C95E402C1AA23C7400CA4013 /* Images.xcassets in Resources */,
-				C95E40241AA23C7400CA4013 /* GameScene.sks in Resources */,
 				C95E402A1AA23C7400CA4013 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C95E40271AA23C7400CA4013 /* GameViewController.m in Sources */,
+				C95E404A1AA2429100CA4013 /* Hole.m in Sources */,
 				C95E401F1AA23C7400CA4013 /* AppDelegate.m in Sources */,
+				C95E404D1AA2459000CA4013 /* BeanBag.m in Sources */,
 				C95E40221AA23C7400CA4013 /* GameScene.m in Sources */,
 				C95E401C1AA23C7400CA4013 /* main.m in Sources */,
+				C95E40471AA23D3700CA4013 /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cornhole/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cornhole/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
