@@ -22,16 +22,15 @@ static int collisionBitMask = 0;
 
 @implementation BeanBag
 
-- (instancetype)initWithVelocity:(CGVector)velocity
-                        rotation:(CGFloat)rotationVelocity {
-    if ((self = [BeanBag spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"beanbag"]
-                                          size:CGSizeMake(80, 80)])) {
+- (instancetype)initWithVelocity:(CGVector)velocity rotation:(CGFloat)rotationVelocity {
+    SKTexture *texture = [SKTexture textureWithImageNamed:@"beanbag"];
+    CGSize textureSize = CGSizeMake(160, 160);
+    if ((self = [BeanBag spriteNodeWithTexture:texture size:textureSize])) {
         _velocity = velocity;
         _rotationVelocity = rotationVelocity;
         _zHeight = 5;
         _zVelocity = -.3;
-        self.physicsBody = [SKPhysicsBody bodyWithTexture:[SKTexture textureWithImageNamed:@"beanbag"]
-                                                     size:CGSizeMake(80, 80)];
+        self.physicsBody = [SKPhysicsBody bodyWithTexture:texture size:textureSize];
         self.physicsBody.mass = 1;
         _isInAir = YES;
         collisionBitMask = 0;

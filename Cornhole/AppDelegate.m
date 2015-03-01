@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <MyoKit/MyoKit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [TLMHub sharedHub];
     return YES;
 }
 

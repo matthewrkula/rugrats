@@ -14,7 +14,7 @@
 
 - (instancetype)initWithColor:(UIColor *)color size:(CGSize)size {
     if ((self = [super initWithColor:color size:size])) {
-        _hole = [Hole createWithRadius:50];
+        _hole = [Hole createWithRadius:100];
         [self addChild:_hole];
     }
     return self;

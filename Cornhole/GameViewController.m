@@ -7,13 +7,23 @@
 //
 
 #import "GameViewController.h"
+
+#import <MyoKit/MyoKit.h>
+
 #import "GameScene.h"
+
+@interface GameViewController ()
+
+@property (strong, nonatomic) UIPopoverController *popover;
+
+@end
 
 @implementation GameViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = YES;
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -29,6 +39,18 @@
     
     // Present the scene.
     [skView presentScene:scene];
+    
+    [self popoverPresentMyoSettings];
+}
+
+// Presenting in a Popover (iPad only)
+- (void)popoverPresentMyoSettings {
+    self.popover = [TLMSettingsViewController settingsInPopoverController];
+    
+    [self.popover presentPopoverFromRect:CGRectMake(0, 0, 0, 0)
+                                  inView:self.view
+                permittedArrowDirections:UIPopoverArrowDirectionAny
+                                animated:YES];
 }
 
 - (BOOL)shouldAutorotate

@@ -15,7 +15,7 @@
     if ((hole = [Hole shapeNodeWithCircleOfRadius:radius])) {
         hole.fillColor = [UIColor blackColor];
         hole.strokeColor = nil;
-        hole.position = CGPointMake(0, 150);
+        hole.position = CGPointMake(0, 250);
     }
     return hole;
 }

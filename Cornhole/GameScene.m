@@ -36,12 +36,11 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
     UITouch *touch = [touches anyObject];
     CGPoint touchPosition = [touch locationInNode:_board];
     
     float rVelocity = ((float)rand() / RAND_MAX / 2) - .25;
-    float yV = ((float)rand() / RAND_MAX) * 7 + 10;
+    float yV = ((float)rand() / RAND_MAX) * 7 + 16;
     
     [self throwBeanBag:touchPosition velocity:CGVectorMake(0, yV) rVelocity:rVelocity];
 }
@@ -59,7 +58,7 @@
     for (BeanBag *beanBag in _beanBags) {
         [beanBag update:currentTime];
         
-        if ([self distanceBetweenPoint1:beanBag.position andPoint2:_board.hole.position] < 40 && !beanBag.isInAir) {
+        if ([self distanceBetweenPoint1:beanBag.position andPoint2:_board.hole.position] < 90 && !beanBag.isInAir) {
             beanBag.velocity = CGVectorMake(0, 0);
             SKAction *fadeAction = [SKAction fadeOutWithDuration:0.2];
             [beanBag runAction:fadeAction completion:^{
