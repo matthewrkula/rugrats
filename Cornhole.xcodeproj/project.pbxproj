@@ -21,7 +21,6 @@
 		C95E404F1AA2917600CA4013 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95E404E1AA2917600CA4013 /* MyoKit.framework */; };
 		C95E40511AA2919B00CA4013 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95E40501AA2919B00CA4013 /* CoreBluetooth.framework */; };
 		C95E40531AA291D400CA4013 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95E40521AA291D400CA4013 /* SystemConfiguration.framework */; };
-		C95E40561AA293AA00CA4013 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E40551AA293AA00CA4013 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,6 @@
 		C95E404E1AA2917600CA4013 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Cornhole/MyoKit.framework; sourceTree = "<group>"; };
 		C95E40501AA2919B00CA4013 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		C95E40521AA291D400CA4013 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C95E40541AA293AA00CA4013 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		C95E40551AA293AA00CA4013 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +112,6 @@
 				C95E40211AA23C7400CA4013 /* GameScene.m */,
 				C95E40251AA23C7400CA4013 /* GameViewController.h */,
 				C95E40261AA23C7400CA4013 /* GameViewController.m */,
-				C95E40541AA293AA00CA4013 /* MenuViewController.h */,
-				C95E40551AA293AA00CA4013 /* MenuViewController.m */,
 				C95E40281AA23C7400CA4013 /* Main.storyboard */,
 				C95E402B1AA23C7400CA4013 /* Images.xcassets */,
 				C95E402D1AA23C7400CA4013 /* LaunchScreen.xib */,
@@ -268,7 +263,6 @@
 				C95E40271AA23C7400CA4013 /* GameViewController.m in Sources */,
 				C95E404A1AA2429100CA4013 /* Hole.m in Sources */,
 				C95E401F1AA23C7400CA4013 /* AppDelegate.m in Sources */,
-				C95E40561AA293AA00CA4013 /* MenuViewController.m in Sources */,
 				C95E404D1AA2459000CA4013 /* BeanBag.m in Sources */,
 				C95E40221AA23C7400CA4013 /* GameScene.m in Sources */,
 				C95E401C1AA23C7400CA4013 /* main.m in Sources */,
